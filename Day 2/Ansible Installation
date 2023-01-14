@@ -31,5 +31,9 @@ Steps:
   5) To verfiy the installation please check below command
       ansible --version
 
+<<<<<<< HEAD
 ##Refernce Link
 Link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
+=======
+
+>>>>>>> 741ec0e4c424751b4c27eda9fce41c70b9f29b8c

@@ -1,0 +1,32 @@
+Pre-Requrities
+   SSH Clinet
+   Control Nodes
+   Managed Nodes
+   Sudo Access
+
+OS Platforms:
+   Linux
+   CentOs
+   Debian
+   Ubuntu
+   MacOS
+
+Control Nodes:
+    Need to Configure Python
+    Need to Configure Ansible Core 2.14 
+
+Managed Nodes:
+    Need to configure Python
+
+    
+Steps:
+  1) Update System packages
+      sudo yum install update 
+  2) Check ansible repositery is enabled or not
+      sudo amazon-linux-extras | grep ansible2
+  3) It's present please go to next step else enable the repo
+      sudo amazon-linux-extras install ansible2    
+  4) Install the ansible core
+      amazon-linux-extras install ansible2 -y
+  5) To verfiy the installation please check below command
+      ansible --version

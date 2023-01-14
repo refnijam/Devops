@@ -1,0 +1,22 @@
+Steps:
+ 1)Launch the Control Node and Managed Nodes.
+ 2)Create Newuser like User Name (ansadminnijam) & across all server and provide with password.
+ 3)Give Sudo User asccess for ansadminnijam (visudo)
+    [UserName] ALL=(ALL:ALL) ALL
+    eg: ansadminnijam ALL=(ALL:ALL)  ALL
+
+ 4)Make Sure that PasswordAuthentication Yes (enable by default NO) in all server and restart with sshd services
+     -/etc/ssh/sshd_config
+ 5)Generate ssh-keys using ssh-keygen cmd for new users(ansadminnijam)	 
+ 6)copy SSh publick key using ssh-copy-id <hostname>
+    -ssh-copy-id -i </home/ansadmin/.ssh/id_rsa.pub> ansadmin@ipaddress
+7)Now login to remote server without providing password 
+     ssh ipaddress
+8)Ansible Engine uses SSH Connection to connect and work with manage nodes;
+9) We can create SSH Connection two ways
+   -PasswordAuthentication
+   -Password-less Authentication   
+10) Provide the manage node using IP/FQDN in invontery file on Ansible Engine. It will present in  /etc/ansible.
+
+11) Group a Node into invetory and ping a module you will got a response.     
+     Simple test ansible all -m ping

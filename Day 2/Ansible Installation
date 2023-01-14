@@ -30,3 +30,6 @@ Steps:
       amazon-linux-extras install ansible2 -y
   5) To verfiy the installation please check below command
       ansible --version
+
+##Refernce Link
+Link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html

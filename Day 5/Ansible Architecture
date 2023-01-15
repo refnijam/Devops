@@ -40,8 +40,13 @@ Plugin:
    It's expand the functionality of Ansible. We use more plugins and easy to write and excute. 
    Plugin must be written in Python.
 
- Host
- ---------------------  
+ Host:
+ ------------------------
    Host are node or any machine and it have any OS like Linux,Centos,Debain,Macos.
 
- P  
+ Playbooks:
+ --------------------------------
+     It is collection of task and it will excute at node system.
+     It will be write at YAML Script.  
+
+ Ref.Link: https://docs.ansible.com/ansible/latest/dev_guide/overview_architecture.html#plugins    

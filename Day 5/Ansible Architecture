@@ -1,0 +1,47 @@
+Ansible Architecture
+======================================
+   Ansible core engines intract with user who worte with Adcoh commands/playbooks to connect Public and private clouds.
+
+Architecture Core Components:
+--------------------------------
+   API
+   Inventory
+   Modules
+   Plugins
+   playbooks
+   Host
+
+Inventory
+------------------------
+   It's a collections of Nodes it's contains webserver,db server,stage etc.
+
+[webservers]
+www1.example.com
+www2.example.com
+
+[dbservers]
+db0.example.com
+db1.example.com
+
+[stage]
+dev.stage.com
+dev1.stage.com
+
+API
+-----------------
+   API's works as the transports for cloud(Public/Private)   
+
+Modules
+---------------
+   It's connected with node and excuted with modules. Ansible engine excutes with modules and perform the task and once it's will completed it removed.
+   
+Plugin:
+--------------------------
+   It's expand the functionality of Ansible. We use more plugins and easy to write and excute. 
+   Plugin must be written in Python.
+
+ Host
+ ---------------------  
+   Host are node or any machine and it have any OS like Linux,Centos,Debain,Macos.
+
+ P  
